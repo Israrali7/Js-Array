@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: black;
+            background-color: beige;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>JAVASCRIPT</h1>
+    <script>
+    // ARRAY
+        var studentname =[ ];
+
+        var colors = ["red", "green", "blue", "yellow"];
+
+        var numbers = [1, 2, 3, 4, 5];
+        
+        var booleanArray = [true, false, true, false];
+        
+        var  mixedArray = ["apple", 5, true, "banana", false];
+        
+        var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+        
+        var studentName =["Ahmed" , "Ali" , "Aliyan"]
+        var score =[400 , 390, 450]
+        var percent0 = (score[0] / 500)*100
+        var percent1 = (score[1] / 500)*100
+        var percent2 = (score[2] / 500)*100
+        console.log(studentName[0] , percent0 , "%");
+        console.log(studentName[1] , percent1, "%");
+        console.log(studentName[2] , percent2, "%");
+        
+
+        var colors = ["red", "green", "blue", "yellow"];
+
+        console.log("Array before adding color to the beginning:", colors);
+
+        var colorToAddAtBeginning = prompt("Enter a color to add to the beginning:");
+        colors.unshift(colorToAddAtBeginning);
+        console.log("Array after adding color to the beginning:", colors);
+
+        var colorToAddAtEnd = prompt("Enter a color to add to the end:");
+        colors.push(colorToAddAtEnd);
+        console.log("Array after adding color to the beginning:", colors);
+
+        colors.unshift("orange", "yellow");
+        console.log("Array after adding two more colors to the beginning:", colors);
+
+        colors.shift();
+        console.log("Array after deleting the first color:", colors);
+
+        colors.pop();
+        console.log("Array after deleting the last color:", colors);
+
+        var indexToAddColor = prompt("Enter the index where you want to add a color:");
+        var colorToAdd = prompt("Enter the color you want to add:");
+        colors.splice(indexToAddColor, 0, colorToAdd);
+        console.log("Array after adding color at the specified index:", colors);
+
+        var indexToDelete = prompt("Enter the index from where you want to delete color(s):");
+        var numberOfColorsToDelete = prompt("Enter the number of colors you want to delete:");
+        colors.splice(indexToDelete, numberOfColorsToDelete);
+        console.log("Array after deleting color(s) at the specified index:", colors);
+
+
+ 
+
+
+
+
+
+    </script>
+</body>
+</html>
